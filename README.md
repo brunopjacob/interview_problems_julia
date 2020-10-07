@@ -6,4 +6,6 @@ List of solutions for interview problems in Julia!
 
 * 02: Reverse Integers: given a 32-bit signed integer, reverse digits of an integer.
 
-* 03: Palindrome number: determine whether an integer is a palindrome 
+* 03: Palindrome number: determine whether an integer is a palindrome.
+
+* 04: Roman to integer: given a roman numeral, convert it to an integer.
