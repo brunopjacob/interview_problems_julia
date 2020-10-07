@@ -20,6 +20,17 @@ using BenchmarkTools # To enable benchmarking of the code
 
 # main function
 function reverse_digits(x::Int64)
+    """
+        reverse_digits(x::Int64) -> Int64
+
+    Returns the digits of input x in reverse order
+
+    Example:
+    reverse_digits(1234)
+
+    Input: 1234
+    Output: 4321
+    """
 
     # Initial value of reversed number
     x_reversed::Int64 = 0

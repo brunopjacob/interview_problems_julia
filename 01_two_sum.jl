@@ -33,6 +33,17 @@ using BenchmarkTools # To enable benchmarking of the code
 
 # Main function
 function find_nums(nums,target)
+    """
+        find_nums(nums::AbstractArray,target::Int64) -> Tuple{Int64,Int64}
+
+    Returns the digits of input x in reverse order
+
+    Example:
+    find_nums([2,7,11,15],9)
+
+    Input: [2,7,11,15], 9
+    Output: (1,2)
+    """
 
     # Transform nums array into dictionary (keys = entries of nums, values = indices)
     nums_dict = Dict{Int64,Int64}() # initialize dictionary
