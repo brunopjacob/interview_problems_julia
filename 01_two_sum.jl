@@ -63,6 +63,7 @@ target = 9;
 
 # To run:
 #indices = find_nums(nums,target)
+#println(indices)
 
 # To benchmark:
 bm = @benchmark find_nums(nums,target) setup=(nums=nums,target=target);
