@@ -16,7 +16,7 @@ Solution author: Bruno Jacob, UCSB
 bruno@engineering.ucsb.edu
 =#
 
-import BenchmarkTools # To enable benchmarking of the code
+using BenchmarkTools # To enable benchmarking of the code
 
 # main function
 function reverse_digits(x::Int64)
@@ -29,13 +29,20 @@ function reverse_digits(x::Int64)
         x = floor(x/10) # Remove last number from x
         x_reversed = x_reversed*10 + pop # Add popped number to x_reversed
     end
-    return x_reversed
+
+    # Check if reversed number overflows
+    if (x_reversed > 2^31-1 || x_reversed < -2^31)
+    return 0
+    else
+        return x_reversed
+    end
+
 end
 
 # Example parameters:
-#a = reverse_digits(12332)
+#a = reverse_digits(123456789)
 #println(a)
 
 # To benchmark:
-bm = @benchmark reverse_digits(x) setup=(x=12332)
+bm = @benchmark reverse_digits(x) setup=(x=12346789)
 display(bm)
