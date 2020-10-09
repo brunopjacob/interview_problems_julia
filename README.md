@@ -9,3 +9,5 @@ List of solutions for interview problems in Julia!
 * 03: Palindrome number: determine whether an integer is a palindrome.
 
 * 04: Roman to integer: given a roman numeral, convert it to an integer.
+
+* 05: Longest common prefix: given an array of strings, returns the longest common prefix string.
