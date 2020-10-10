@@ -11,3 +11,5 @@ List of solutions for interview problems in Julia!
 * 04: Roman to integer: given a roman numeral, convert it to an integer.
 
 * 05: Longest common prefix: given an array of strings, returns the longest common prefix string.
+
+* 06: Valid parentheses: given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determines if the input string is valid.
