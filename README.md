@@ -13,3 +13,5 @@ List of solutions for interview problems in Julia!
 * 05: Longest common prefix: given an array of strings, returns the longest common prefix string.
 
 * 06: Valid parentheses: given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determines if the input string is valid.
+
+* 07: Merge (two) sorted lists: merge two sorted linked lists and return it as a new sorted list.
